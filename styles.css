@@ -13,9 +13,9 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  font-family: "Segoe UI", sans-serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   background: #1e1e1e;
-  color: #ffffff;
+  color: #cecbcb;
 }
 
 header {
@@ -44,7 +44,7 @@ nav a:hover {
 }
 
 main {
-  background-color: #545454;
+  /* background-color: #545454; */
   flex: 1;
   padding: 2rem;
   width: 65%;
@@ -80,4 +80,26 @@ footer {
   color: rgb(51, 51, 51);
   text-align: center;
   padding: 1rem;
+}
+
+section i {
+  font-size: 4rem;
+  transition: transform 0.4s ease;
+}
+
+section i:hover {
+  transform: scale(1.1);
+}
+
+.technologies {
+  background-color: rgba(225, 225, 225, 0.04);
+  margin-top: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
 }
