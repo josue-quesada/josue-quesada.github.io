@@ -5,11 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio Web</title>
     <link rel="stylesheet" href="styles.css" />
-
+    <link rel="icon" href="/assets/Darksign.png" type="image/png" />
     <link
       rel="stylesheet"
       type="text/css"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
+      rel="stylesheet"
     />
   </head>
   <body>
@@ -26,7 +34,7 @@
     <main>
       <h1>Josué Quesada Solano</h1>
       <section id="sobre-mi">
-        <p>
+        <p class="description">
           Computer Science student with a passion for computers and technology,
           seeking for an opportunity to complete my professional internship.
           Skilled in Python, Java and TypeScript with experience in frontend
@@ -61,24 +69,34 @@
       </section>
 
       <section id="contacto">
-        <h2>Contacto</h2>
-        <p>
-          Email:
-          <a href="mailto:josuealex.qs@gmail.com">josuealex.qs@gmail.com</a>
-        </p>
-        <p>
-          GitHub:
-          <a href="https://github.com/josue-quesada" target="_blank"
-            >@josue-quesada</a
-          >
-        </p>
+        <h2>Contact with me</h2>
+        <div class="contact">
+    <p>
+      <span class="contact-icon">📧</span>
+      <strong>Email:</strong>
+      <a href="mailto:josuealex.qs@gmail.com">josuealex.qs@gmail.com</a>
+    </p>
+    <p>
+      <span class="contact-icon">🐙</span>
+      <strong>LinkedIn:</strong>
+      <a href="https://github.com/josue-quesada" target="_blank">@josue-quesada</a>
+    </p>
+    <p>
+      <span class="contact-icon">🐙</span>
+      <strong>GitHub:</strong>
+      <a href="https://github.com/josue-quesada" target="_blank">@josue-quesada</a>
+    </p>
+  </div>
       </section>
     </main>
 
     <footer>
       <p>&copy; 2025 Josué Quesada</p>
     </footer>
-
+    <div id="img-modal" class="img-modal">
+      <span class="img-modal-close">&times;</span>
+      <img class="img-modal-content" id="img-modal-img" />
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
