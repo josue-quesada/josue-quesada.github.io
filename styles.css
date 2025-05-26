@@ -63,7 +63,6 @@ nav a:hover {
 }
 
 main {
-  /* background-color: #545454; */
   flex: 1;
   padding: 2rem;
   width: 65%;
@@ -71,20 +70,52 @@ main {
   margin-right: auto;
 }
 
+.slide-title {
+  opacity: 0;
+  transform: translateY(-40px);
+  transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.slide-title.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Slide-in for sections */
+.slide-section {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.slide-section.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+main h1 {
+  text-align: center;
+}
+
 section {
   margin-bottom: 2rem;
 }
 
+section p {
+  font-size: large;
+}
 .description {
   background-color: rgba(225, 225, 225, 0.04);
   margin-top: 1rem;
   padding: 1rem;
   border-radius: 8px;
   text-align: justify;
+  transition: transform 0.3s ease;
+}
+.description:hover {
+  transform: translateY(-10px);
 }
 
 #lista-proyectos {
-  padding-top: 0.5rem;
+  padding-top: 1rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -97,6 +128,17 @@ section {
 .proyecto-text {
   flex: 1 1 50%;
   padding: 16px;
+}
+
+.proyecto-text p {
+  text-align: justify;
+  font-size: medium;
+}
+
+.proyecto-text ul{
+  list-style-type: disc;
+  margin-top: 0.5rem;
+  padding-left: 20px;
 }
 
 .proyecto-img {
@@ -120,15 +162,6 @@ section {
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.4s ease;
-  opacity: 0;
-  transform: translateX(40px);
-  transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
-
-}
-
-.proyecto.visible {
-  opacity: 1;
-  transform: translateX(0);
 }
 
 .proyecto:hover {
@@ -166,6 +199,25 @@ section i:hover {
   align-items: center;
   justify-content: center;
   border-radius: 8px;
+}
+
+.educationCards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+.education {
+  background-color: rgba(225, 225, 225, 0.04);
+  margin-top: 1rem;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.education:hover {
+  transform: translateY(-10px);
 }
 
 .contact {
