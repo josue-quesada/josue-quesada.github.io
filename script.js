@@ -14,7 +14,7 @@ const proyectos = [
   {
     titulo: "Member of the Tecverse Development Team",
     descripcion:
-      "Worked along classmates and professors on the development of a virtual campus. The campus blueprints were used to create 3D models of the buildings, using SketchUp Pro, and thus create the Tecverse.",
+      "Worked along classmates and professors on the development of a virtual campus. The campus blueprints were used to create 3D models of the buildings, using SketchUp Pro, the beginning of an ongoing project, the Tecverse.",
     info: [
       "Researched technologies for 3D prototyping",
       "Created basic designs to become familiar with modeling tools",
